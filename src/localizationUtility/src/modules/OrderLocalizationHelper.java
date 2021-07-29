@@ -9,28 +9,9 @@ import localizationUtility.src.inter.ILocalizationManager;
 
 @Named
 @Dependent
-public class OrderLocalizationHelper {
-	
-	@Inject
-	private ILocalizationManager localizationManager;	
+public class OrderLocalizationHelper extends AbstractLocalizationHelper {
 	
 
-	
-	public ILocalizationManager getLocalizationManager() {
-		return localizationManager;
-	}
-
-	public void setLocalizationManager(ILocalizationManager localizationManager) {
-		this.localizationManager = localizationManager;
-	}
-	
-	
-	
-	
-	
-	private String getString(String etiqueta) {
-		return getLocalizationManager().getString(etiqueta);
-	}
 
 	public String getStringOrderId() {
 		return getString("purchasedetail_order_id");
