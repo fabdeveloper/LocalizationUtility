@@ -94,6 +94,16 @@ public class GeneralLocalizationHelper extends AbstractLocalizationHelper {
 		return getString("configview_delivery_comentarios");
 	}
 	
+//	public String getStringLastModificationDate() {
+//		return getString("configview_delivery_lastmodificationdate");
+//	}
+	
+	public String getStringDeliveryDetailsModificationDate() {
+		return getString("deliverydetails_modificationdate");
+	}
+	
+	
+	
 	public String getStringDeliveryType() {
 		return getString("configview_delivery_tipodeenvio");
 	}
@@ -186,16 +196,14 @@ public class GeneralLocalizationHelper extends AbstractLocalizationHelper {
 	
 	// PURCHASE
 	
-	
-	public String getStringDireccionEnvio() {
+	public String getStringDireccionEnvio() { // TODO : metodo duplicado
 		return getString("configview_delivery_direcciondeenvio");
-	}
-	
-	public String getStringComentarios() {
+	}		
+	public String getStringComentarios() { // TODO : metodo duplicado
 		return getString("configview_delivery_comentarios");
 	}
 	
-	public String getStringTipoEnvio() {
+	public String getStringTipoEnvio() { // TODO : metodo duplicado
 		return getString("configview_delivery_tipodeenvio");
 	}
 	
